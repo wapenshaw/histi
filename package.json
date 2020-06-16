@@ -1,0 +1,16 @@
+{
+	"name": "histi",
+	"version": "1.0.0",
+	"description": "Honey I Shrunk The Image! an Image Compressor. ",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron dist/main.js",
+		"compile": "tsc"
+	},
+	"author": "Siddharth Abbineni",
+	"license": "MIT",
+	"devDependencies": {
+		"electron": "^9.0.4",
+		"typescript": "^3.9.5"
+	}
+}
