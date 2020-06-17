@@ -23,5 +23,12 @@
 			"foldStart": "/* #region  [NAME] */",
 			"foldStartRegex": "^[\\s]*/\\*[\\s]*#region[\\s]*(.*)[\\s]*\\*/[\\s]*$"
 		}
-	}
+	},
+	// Exclude from explorer
+	"files.exclude": {
+		"node_modules/": true
+		// "dist/": true
+	},
+	// Use Installed Typescript
+	"typescript.tsdk": "node_modules\\typescript\\lib"
 }
