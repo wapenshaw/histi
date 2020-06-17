@@ -3,6 +3,18 @@
 	"version": "1.0.0",
 	"description": "Honey I Shrunk The Image! an Image Compressor. ",
 	"main": "main.js",
+	"contributors": [
+		{
+			"email": "thescaletcars@gmail.com",
+			"name": "Siddharth Abbineni",
+			"url": "https://wapenshaw.github.io"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wapenshaw/histi.git"
+	},
+	"homepage": "https://github.com/wapenshaw/histi",
 	"scripts": {
 		"start": "electron dist/main.js",
 		"compile": "tsc"

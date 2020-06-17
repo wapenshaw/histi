@@ -1,4 +1,27 @@
+/*
+ * @CreateTime: Jun 17, 2020 5:30 AM
+ * @Author: Siddharth Abbineni
+ * @Contact: thescarletcars@gmail.com
+ * @Last Modified By: Siddharth Abbineni
+ * @Last Modified Time: Jun 17, 2020 5:30 AM
+ * @Description: Modify Here, Please
+ */
 {
 	// Histi Workspace settings!
-	"workbench.colorTheme": "Mowgli"
+	"workbench.colorTheme": "Mowgli",
+	"debug.openExplorerOnEnd": true,
+
+	// EXT - Code Header
+	"codeheader.author": "Siddharth Abbineni",
+	"codeheader.contact": "thescarletcars@gmail.com",
+
+	// EXT - Custom Region Folding
+	"maptz.regionfolder": {
+		"[jsonc]": {
+			"foldEnd": "/* #endregion */",
+			"foldEndRegex": "/\\*[\\s]*#endregion",
+			"foldStart": "/* #region  [NAME] */",
+			"foldStartRegex": "^[\\s]*/\\*[\\s]*#region[\\s]*(.*)[\\s]*\\*/[\\s]*$"
+		}
+	}
 }

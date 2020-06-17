@@ -1,0 +1,17 @@
+/*
+ * @CreateTime: Jun 17, 2020 5:29 AM
+ * @Author: Siddharth Abbineni
+ * @Contact: thescarletcars@gmail.com
+ * @Last Modified By: Siddharth Abbineni
+ * @Last Modified Time: Jun 17, 2020 5:29 AM
+ * @Description: Modify Here, Please
+ */
+{
+	"recommendations": [
+		"albert.TabOut",
+		"christian-kohler.npm-intellisense",
+		"christian-kohler.path-intellisense",
+		"esbenp.prettier-vscode",
+		"wapenshaw.mowgli"
+	]
+}
