@@ -24,9 +24,19 @@
 			"foldStartRegex": "^[\\s]*/\\*[\\s]*#region[\\s]*(.*)[\\s]*\\*/[\\s]*$"
 		}
 	},
+	// Prettier Settings
+
+	// EXT - Live Server Settings
+	"liveServer.settings.port": 2802,
+	"liveServer.settings.useBrowserPreview": true,
+
+	// Browser Preview Settings
+	"browser-preview.startUrl": "http://localhost:2802/app/index.html",
+
 	// Exclude from explorer
 	"files.exclude": {
-		"node_modules/": true
+		"node_modules/": true,
+		"**/*.min.*": true
 		// "dist/": true
 	},
 	// Use Installed Typescript

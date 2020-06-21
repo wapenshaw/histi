@@ -16,7 +16,7 @@
 	},
 	"homepage": "https://github.com/wapenshaw/histi",
 	"scripts": {
-		"start": "electron build/main.js",
+		"start": "electron build/main/main.js",
 		"compile": "tsc"
 	},
 	"author": "Siddharth Abbineni",
@@ -24,5 +24,6 @@
 	"devDependencies": {
 		"electron": "^9.0.4",
 		"typescript": "^3.9.5"
-	}
+	},
+	"dependencies": {}
 }

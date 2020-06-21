@@ -17,7 +17,7 @@
 			"sourceMaps": true,
 			"outFiles": ["${workspaceFolder}/build/**/*.js"],
 			"runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
-			"runtimeArgs": ["--remote-debugging-port=9222", "./build/main.js"],
+			"runtimeArgs": ["--remote-debugging-port=9222", "./build/main/main.js"],
 			"outputCapture": "std",
 			"windows": {
 				"runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
@@ -29,6 +29,7 @@
 			"type": "chrome",
 			"request": "attach",
 			"port": 9222,
+			"sourceMaps": true,
 			"webRoot": "${workspaceFolder}",
 			"timeout": 30000
 		}

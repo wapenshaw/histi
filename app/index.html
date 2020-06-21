@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Histi</title>
+		<link rel="stylesheet" href="css/bulma.css" />
+		<link rel="stylesheet" href="css/histi.css" />
+
+		<!-- <link rel="stylesheet" href="css/bulma.min.css" /> -->
+		<!-- <link rel="stylesheet" href="css/bulmaswatch.min.css" /> -->
+		<script defer src="js/all.js"></script>
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'" />
+	</head>
+	<body>
+		<div class="container is-fluid top mt-6">
+			<div class="tile is-ancestor">
+				<div class="tile is-vertical is-8">
+					<div class="tile">
+						<div class="tile is-vertical">
+							<article class="tile is-child has-text-centered">
+								<h1 class="modal-card-title">Histi</h1>
+								<img src="icons/png/128x128.png" class="is-128x128 mt-4" alt="" />
+								<p class="">Honey! I Shrunk The Image! An Image resizer</p>
+							</article>
+							<div class="columns is-child is-centered is-vcentered mt-3">
+								<form action="" id="image-form" class="">
+									<div class="field">
+										<div class="file column is-info has-name is-boxed">
+											<label class="file-label">
+												<input class="file-input" type="file" name="imageupload" id="imgupload" />
+												<span class="file-cta">
+													<span class="file-icon">
+														<i class="fas fa-upload"></i>
+													</span>
+													<span class="file-label">
+														Select an Image
+													</span>
+												</span>
+												<div class="field">
+													<div class="control">
+														<input id="imageurl" class="input is-info" type="text" placeholder="filepath" />
+													</div>
+												</div>
+											</label>
+										</div>
+										<div class="file column is-primary has-name is-boxed has-text-centered">
+											<label class="label">
+												Quality: <em class="has-text-danger">Lower quality equal smaller file size</em>
+											</label>
+
+											<p class="slidercontainer">
+												<input type="range" width="500" id="qualityrange" min="0" max="100" class="slider" />
+											</p>
+										</div>
+									</div>
+									<div class="file column is-primary has-name is-boxed has-text-centered">
+										<input type="submit" value="Resize" class="button is is-danger is-fullwidth" />
+									</div>
+								</form>
+							</div>
+							<div class="card">
+								<div class="card-content">Output Location: <span id="outputpath" class="is-danger"></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

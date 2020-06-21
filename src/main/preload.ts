@@ -6,6 +6,9 @@
  * @Last Modified Time: Jun 17, 2020 5:29 AM
  * @Description: Modify Here, Please
  */
+
+const uiKitJs: string[] = ['../../app/js/uikit.js', '../../app/js/uikit-icons.js'];
+
 window.addEventListener('DOMContentLoaded', () => {
 	const replaceText = (selector: string, text: string) => {
 		const element = document.getElementById(selector);
