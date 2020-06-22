@@ -6,17 +6,16 @@
  * @Last Modified Time: Jun 19, 2020 3:19 AM
  * @Description: Modify Here, Please
  */
-import { app, BrowserWindow, Menu } from 'electron';
-import { createWindow } from './mainwindow';
-import { enableIPC } from './ipc';
+import { app, BrowserWindow, ipcMain, Menu } from 'electron';
 import { isNotMac } from './config';
+import { convertToFo, FileOptions } from './definitions';
+import { createWindow } from './mainwindow';
 import { menuTemplate } from './menu';
+import { resizeImage } from './resize';
+
 let win: BrowserWindow | null = null;
 
 process.env.NODE_ENV = 'development';
-
-console.log(__dirname);
-// app.allowRendererProcessReuse = true;
 
 app.on('ready', async () => {
 	// enableIPC();
@@ -39,4 +38,11 @@ app.on('activate', async () => {
 			win = null;
 		});
 	}
+});
+
+ipcMain.on('image-resize', (e, options) => {
+	const fileOptions: FileOptions = convertToFo(options);
+	resizeImage(fileOptions).then((filePath) => {
+		win?.webContents.send('resize-done', filePath);
+	});
 });

@@ -24,7 +24,11 @@
 			"foldStartRegex": "^[\\s]*/\\*[\\s]*#region[\\s]*(.*)[\\s]*\\*/[\\s]*$"
 		}
 	},
-	// Prettier Settings
+	// EXT - Prettier Settings
+	"prettier.useTabs": true,
+	"editor.tabSize": 2,
+	"prettier.tabWidth": 2,
+	"prettier.printWidth": 100,
 
 	// EXT - Live Server Settings
 	"liveServer.settings.port": 2802,

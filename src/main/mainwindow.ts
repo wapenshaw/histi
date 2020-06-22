@@ -8,13 +8,13 @@
  */
 import { App, BrowserWindow } from 'electron';
 import * as path from 'path';
-import { dev, loadURL } from './config';
+import { dev } from './config';
 
 export const createWindow = async (app: App) => {
 	// const preload = path.join(__dirname, 'preload.js');
 
 	const win = new BrowserWindow({
-		width: 400,
+		width: dev ? 1000 : 400,
 		height: 800,
 		resizable: dev ? true : false,
 		icon: path.join(__dirname, '../../app/icons/png/256x256.png'),
@@ -29,6 +29,5 @@ export const createWindow = async (app: App) => {
 			win.webContents.openDevTools();
 		});
 	}
-
 	return win;
 };

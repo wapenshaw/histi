@@ -14,14 +14,14 @@
 		<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'" />
 	</head>
 	<body>
-		<div class="container is-fluid top mt-6">
+		<div class="container is-fluid top mt-5">
 			<div class="tile is-ancestor">
 				<div class="tile is-vertical is-8">
 					<div class="tile">
 						<div class="tile is-vertical">
 							<article class="tile is-child has-text-centered">
-								<h1 class="modal-card-title">Histi</h1>
-								<img src="icons/png/128x128.png" class="is-128x128 mt-4" alt="" />
+								<h1 class="modal-card-title is-size-1">Histi</h1>
+								<img src="icons/png/64x64.png" class="is-64x64 mt-4" alt="" />
 								<p class="">Honey! I Shrunk The Image! An Image resizer</p>
 							</article>
 							<div class="columns is-child is-centered is-vcentered mt-3">
@@ -29,7 +29,8 @@
 									<div class="field">
 										<div class="file column is-info has-name is-boxed">
 											<label class="file-label">
-												<input class="file-input" type="file" name="imageupload" id="imgupload" />
+												<input class="file-input" type="file" name="imgupload" id="imgupload"
+												accept="image/*"" />
 												<span class="file-cta">
 													<span class="file-icon">
 														<i class="fas fa-upload"></i>
@@ -40,18 +41,32 @@
 												</span>
 												<div class="field">
 													<div class="control">
-														<input id="imageurl" class="input is-info" type="text" placeholder="filepath" />
+														<input
+															id="imageurl"
+															class="input is-info has-text-centered"
+															type="text"
+															readonly
+															placeholder="No File Selected"
+														/>
 													</div>
 												</div>
 											</label>
 										</div>
 										<div class="file column is-primary has-name is-boxed has-text-centered">
 											<label class="label">
-												Quality: <em class="has-text-danger">Lower quality equal smaller file size</em>
+												Quality:
+												<em class="has-text-danger">Lower quality equal smaller file size</em>
 											</label>
 
 											<p class="slidercontainer">
-												<input type="range" width="500" id="qualityrange" min="0" max="100" class="slider" />
+												<input
+													type="range"
+													width="500"
+													id="qualityrange"
+													min="0"
+													max="100"
+													class="slider"
+												/>
 											</p>
 										</div>
 									</div>
@@ -61,7 +76,12 @@
 								</form>
 							</div>
 							<div class="card">
-								<div class="card-content">Output Location: <span id="outputpath" class="is-danger"></span></div>
+								<div class="card-header-title has-text-centered">
+									<span id="outputheader" class="is-primary">Output Path:</span>
+								</div>
+								<div class="card-content has-text-centered">
+									<span id="outputpath" class="is-danger"></span>
+								</div>
 							</div>
 						</div>
 					</div>
