@@ -22,7 +22,7 @@
 	"author": "Siddharth Abbineni",
 	"license": "MIT",
 	"devDependencies": {
-		"electron": "^9.0.4",
+		"electron": "^9.3.1",
 		"typescript": "^3.9.5"
 	},
 	"dependencies": {
